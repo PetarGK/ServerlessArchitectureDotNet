@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
+    <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="1.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Minniowa.Users.Application\Minniowa.Users.Application.csproj" />
+    <ProjectReference Include="..\Minniowa.Users.Core\Minniowa.Users.Core.csproj" />
+    <ProjectReference Include="..\Minniowa.Users.Infrastructure\Minniowa.Users.Infrastructure.csproj" />
+    <ProjectReference Include="..\Minniowa.Users.Services\Minniowa.Users.Services.csproj" />
+  </ItemGroup>
+</Project>
